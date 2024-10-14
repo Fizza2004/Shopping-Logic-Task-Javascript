@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Logic Explanation</title>
+  <link rel="stylesheet" href="./assets/SASS/index.css">
+  <script src="./assets/scripts/index.js" defer></script>
+</head>
+<body>
+  <!--Header section start-->
+  <header>
+    <section id="shopping-header">
+      <div class="container">
+        <div class="title">PRODUCT LIST</div>
+        <div class="shopping-icon-wrapper" onclick=showModule()>
+          <img width="25" height="25" src="https://img.icons8.com/ios/50/shopping-cart--v1.png" alt="shopping-cart--v1"/>
+          <span class="quantity">0</span>
+        </div>
+      </div>
+    </section>
+  </header>
+  <!--Header section end-->
+
+  <!--Main section start-->
+  <main>
+    <section id="shopping-cards">
+      <div class="container">
+        <div class="row" id="card-container">
+        </div>
+      </div>
+    </section>
+    <section id="cart-items-sidebar">
+      <div class="sidebar">
+        <h1>Shopping Cart</h1>
+        <div class="chosen-items-list">
+          <!-- <div class="chair-item">
+            <div class="productInfo">
+              <img src="${obj.imageUrl}" alt="${obj.title}" class="productImg">
+              <span class="item-title"></span>
+              <span class="item-price"></span>
+            </div>
+            <div class="countOfProduct">
+                <button class="prev-button">></button>
+                <span class="item-count"></span>
+                <button class="next-button"><</button>
+            </div>
+          </div> -->
+        </div>
+        <div class="total-price-wrapper">
+          <span>Total price:</span>
+          <span class="total-price">$0</span>
+        </div>
+        <div class="action-buttons">
+          <!-- <button class="close-btn">CLOSE</button>
+          <button class="checkout-btn">CHECKOUT</button> -->
+        </div>
+      </div>
+    </section>
+  </main>
+  <!--Main section end-->
+</body>
+</html>

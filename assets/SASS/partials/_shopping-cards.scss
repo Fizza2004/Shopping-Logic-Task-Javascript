@@ -1,0 +1,68 @@
+#shopping-cards{
+  .container{
+    max-width: $m-w-850;
+    margin: 0 auto;
+    .card{
+      background-color: rgb(176, 169, 125);
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      height: $h-300;
+      border-radius: $b-r-10;
+      .card-header{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        img{
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+         padding: $p-14;
+         filter: drop-shadow(0 50px 20px #0009);
+        }
+      }
+      .card-content{
+        display: $d-f;
+        flex-wrap: wrap;
+        justify-content: $c;
+        align-items: $c;
+        height: $h-40;
+        margin-bottom: $m-30;
+        width: 100%;
+        p{
+          font-size: $f-15;
+          width: 70%;
+          text-align: $c;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+      }
+      .card-info{
+        width: 100%;
+        margin-top: $m-t-15;
+        height: $h-30;
+        .chair-price{
+          p{
+            font-size: $f-16;
+            text-align: $c;
+            letter-spacing: $l-s-3;
+          }
+        }
+      }
+      .card-action{
+        width: 100%;
+        height: $h-30;
+        display: flex;
+        justify-content: center;
+        button{
+          font-size: $f-12;
+          padding: $p-5 $p-8;
+          color: $white;
+          background-color: black;
+          border: none;
+          border-radius: $b-r-19;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+

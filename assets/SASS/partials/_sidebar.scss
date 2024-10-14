@@ -1,0 +1,91 @@
+#cart-items-sidebar{
+  .sidebar{
+    width: $w-350;
+    position: fixed;
+    top: 0;
+    right: -$r-500;
+    bottom: 0;
+    background-color: $black;
+    display: grid;
+    grid-template-rows: 70px 1fr 60px;
+    h1{
+      color: $white;
+      font-weight: $f-w-250;
+      font-family: Arial, Helvetica, sans-serif;
+      padding: $p-10;
+    }
+    .chosen-items-list{
+      .chair-item{
+        display: flex;
+        color: $white;
+        margin-bottom: 4%;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+        .productInfo{
+          display: flex;
+          text-align: center;
+          align-items: center;
+          .productImg{
+            height: $h-50;
+            width: $w-50;
+            margin-right: 5%;
+          }
+          .item-title{
+            font-size: $f-12;
+          }
+          .item-price{
+            margin-left: 8%;
+            padding: $p-10;
+            margin-right: 3%;
+            padding: $p-15;
+          }
+        }
+       
+        .countOfProduct{
+          display: flex;
+          text-align: center;
+          align-items: center;
+          button{
+           padding: $p-2 $p-6;
+           border-radius: 50%;
+           border: none;
+          }
+          .item-price{
+            font-size: $f-15;
+            padding: $p-5;
+          }
+        }
+      }
+
+      //make the background of even chair items in the list dark-gray
+      .chair-item:nth-child(even){
+        background-color: $dark-gray;
+      }
+    }
+
+    .total-price-wrapper{
+      color: $white;
+      padding: $p-10;
+    }
+
+    .action-buttons{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      button{
+        border: none;
+        padding: $p-20 0;
+      }
+      .close-btn{
+        background-color: $light-gray;
+      }
+      
+      .checkout-btn{
+        background-color: $dark-yellow;
+      }
+    }
+  }
+
+  .showCart{
+    right: 0;
+  }
+}
